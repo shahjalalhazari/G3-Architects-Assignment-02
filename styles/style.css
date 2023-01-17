@@ -6,6 +6,7 @@
 
 :root {
     --primary-color: #ff900e;
+    --dark-color-1 : #131313;
     --dark-color-2: #424242;
     --dark-color-3: #727272;
 }
@@ -14,13 +15,13 @@
 .section-title {
     font-weight: 700;
     font-size: 65px;
-    color: #131313;
+    color: var(--dark-color-1);
 }
 
 .section-sub-title {
     font-weight: 700;
     font-size: 45px;
-    color: #131313;
+    color: var(--dark-color-1);
 }
 
 .description {
@@ -62,7 +63,7 @@ a {
     font-weight: 700;
     font-size: 45px;
     text-align: center;
-    color: #131313;
+    color: var(--dark-color-1);
 }
 
 .nav-items {
@@ -78,7 +79,7 @@ a {
 
 .nav-item {
     margin-left: 75px;
-    color: #424242;
+    color: var(--dark-color-2);
 }
 
 
@@ -117,7 +118,7 @@ a {
 }
 
 .feature-content .gray-text {
-    color: #727272;
+    color: var(--dark-color-3);
 }
 
 .feature-content .orange-text {
@@ -206,6 +207,22 @@ a {
 }
 
 
+/* Sponsors Section's Style */
+.sponsor-section {
+    padding: 0 240px;
+    text-align: center;
+}
+.sponsor-companies {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.sponsor-companies>img {
+    width: 160px;
+    filter: grayscale(100%);
+}
+
+
 /* ---------------------
         Responsive For Small Devices
                 --------------------- */
@@ -259,8 +276,22 @@ a {
     }
 
     .badge {
-        border: 1px solid #FF900E;
+        border: 1px solid var(--primary-color);
         border-radius: 8px;
+    }
+
+
+    /* Sponsors Section's Style */
+    .sponsor-section {
+        padding: 0 30px;
+        text-align: center;
+    }
+    .sponsor-companies {
+        margin-top: 50px;
+        flex-direction: column;
+        row-gap: 24px;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -310,7 +341,21 @@ a {
     }
 
     .badge {
-        border: 1px solid #FF900E;
+        border: 1px solid var(--primary-color);
         border-radius: 8px;
+    }
+
+    /* Sponsors Section's Style */
+    .sponsor-section {
+        padding: 0 80px;
+        text-align: center;
+    }
+    .sponsor-companies {
+        margin-top: 50px;
+        flex-wrap: wrap;
+        row-gap: 24px;
+        column-gap: 50px;
+        justify-content: center;
+        align-items: center;
     }
 }
