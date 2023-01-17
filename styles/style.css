@@ -11,7 +11,11 @@
     color: #131313;
 }
 
-.section-sub-title {}
+.section-sub-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
 
 .description {
     margin-top: 24px;
@@ -26,6 +30,8 @@
     color: #fff;
     border: 0;
     margin-top: 32px;
+    font-size: 20px;
+    font-weight: 600;
 }
 a {
     text-decoration: none;
@@ -81,6 +87,30 @@ a {
 }
 
 
+/* Features Section's Style */
+.features-section {
+    margin: 85px 301px 130px 301px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feature-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 24px;
+    column-gap: 24px;
+}
+.feature-content {
+    padding-left: 75px;
+}
+.feature-content .gray-text {
+    color: #727272;
+}
+.feature-content .orange-text {
+    color: #FF900E;
+}
+
+
 /* ---------------------
         Responsive For Small Devices
                 --------------------- */
@@ -96,6 +126,20 @@ a {
     .nav-item {
         margin-left: 0;
     }
+    /* Features Section's Style */
+    .features-section {
+        margin: 65px 30px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .feature-images {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-content {
+        padding-left: 0;
+        margin-bottom: 50px;
+    }
 }
 
 
@@ -109,5 +153,19 @@ a {
     }
     .nav-item {
         margin-left: 35px;
+    }
+    /* Features Section's Style */
+    .features-section {
+        margin: 65px 30px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .feature-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .feature-content {
+        padding-left: 0;
+        margin-bottom: 50px;
     }
 }
