@@ -9,6 +9,7 @@
     --dark-color-1 : #131313;
     --dark-color-2: #424242;
     --dark-color-3: #727272;
+    --background-color: #FFF4E7;
 }
 
 /* Common Styles */
@@ -27,7 +28,7 @@
 .description {
     margin-top: 24px;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 30px;
     color: #727272;
 }
 
@@ -50,7 +51,7 @@ a {
 /* Header Section's style */
 .header-section {
     padding: 50px 240px 45px 240px;
-    background-color: rgba(255, 144, 14, 0.1);
+    background-color: var(--background-color);
 }
 
 .navbar {
@@ -223,6 +224,19 @@ a {
 }
 
 
+/* Footer's Style */
+.footer {
+    background-color: var(--background-color);
+    margin: 130px 240px 216px;
+    padding: 38px 410px;
+    text-align: center;
+}
+.footer-description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #727272;
+}
+
 /* ---------------------
         Responsive For Small Devices
                 --------------------- */
@@ -293,6 +307,13 @@ a {
         justify-content: center;
         align-items: center;
     }
+
+
+    /* Footer's Style */
+    .footer {
+        margin: 100px 30px;
+        padding: 24px 24px;
+    }
 }
 
 
@@ -357,5 +378,12 @@ a {
         column-gap: 50px;
         justify-content: center;
         align-items: center;
+    }
+
+
+    /* Footer's Style */
+    .footer {
+        margin: 100px 80px;
+        padding: 30px 30px;
     }
 }
