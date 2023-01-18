@@ -276,8 +276,7 @@ a {
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin: 85px 0;
-        padding: 0 35px;
+        margin: 85px 35px;
     }
 
     .feature-images {
@@ -322,6 +321,33 @@ a {
         bottom: 150px;
         width: 65%;
         left: 105px;
+    }
+    .item-button {
+        background-color: var(--primary-color);
+        border-radius: 8px;
+        color: #fff;
+        border: 0;
+        text-align: center;
+        align-items: center;
+        /* padding: 0 20px; */
+        /* width: 100%; */
+        position: relative;
+        bottom: 100px;
+        left: 20%;
+    }
+
+    .item-button>h1 {
+        font-weight: 600;
+        font-size: 45px;
+        padding-top: 20px;
+    }
+
+    .item-button>h1>span {
+        font-weight: 500;
+        font-size: 25px;
+        position: relative;
+        bottom: 20px;
+
     }
 
     /* Facts Section's Style */
