@@ -205,6 +205,18 @@ a {
     border: 1px solid var(--primary-color);
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
 }
+.badge-title {
+    margin-top: 30px;
+    font-weight: 600;
+    line-height: 0;
+    font-size: 45px;
+    color: var(--dark-color-2);
+}
+.badge-sub-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--dark-color-3);
+}
 
 
 /* Sponsors Section's Style */
@@ -328,6 +340,9 @@ a {
         border: 1px solid var(--primary-color);
         box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     }
+    .badge-title {
+        margin-top: 50px;
+    }
 
 
     /* Sponsors Section's Style */
@@ -443,9 +458,18 @@ a {
         position: relative;
         bottom: 130px;
     }
+    .badges {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 24px;
+        margin-top: 50px;
+    }
     .badge:hover {
         border: 1px solid var(--primary-color);
         box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    }
+    .badge-title {
+        margin-top: 50px;
     }
 
 
